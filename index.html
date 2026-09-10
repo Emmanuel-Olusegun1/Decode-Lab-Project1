@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs | Frontend Engineering Track - Project 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Component -->
+    <header class="header-container">
+        <div class="header__inner">
+            <div class="logo-container">
+                <span class="logo__text">DecodeLabs</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link">Home</a></li>
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-container">
+            <div class="hero__content">
+                <h1 class="hero__headline">Foundations of Visual Architecture</h1>
+                <p class="hero__text">Constructing pixel-perfect, semantic, and accessible digital foundations with absolute clarity.</p>
+                <a href="#contact" class="button button--primary">Call to Action</a>
+            </div>
+            <div class="hero__media">
+                <!-- Explicit dimensions to prevent Cumulative Layout Shift (CLS) -->
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Code editor displaying clean frontend markup" width="800" height="600" class="hero__image">
+            </div>
+        </section>
+
+        <!-- Content Grid Section -->
+        <section id="services" class="content-grid-container">
+            <h2 class="section-title">Core Engineering Modules</h2>
+            <div class="content-grid">
+                <article class="module-card">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400&q=80" alt="Semantic HTML layout illustration" width="400" height="300" class="module-card__image">
+                    <h3 class="module-card__title">Semantic DOM</h3>
+                    <p class="module-card__text">Using explicit semantic tags to describe content clearly to browsers and assistive technologies.</p>
+                </article>
+                <article class="module-card">
+                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=400&q=80" alt="CSS Grid and Flexbox layout system" width="400" height="300" class="module-card__image">
+                    <h3 class="module-card__title">CSS Engineering</h3>
+                    <p class="module-card__text">Applying the DRY principle, BEM methodology, and proper separation of concerns.</p>
+                </article>
+                <article class="module-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Accessibility and validation checklist" width="400" height="300" class="module-card__image">
+                    <h3 class="module-card__title">Quality Audit</h3>
+                    <p class="module-card__text">Passing strict W3C validation, contrast ratios, and layout performance benchmarks.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <footer id="contact" class="footer-container">
+        <div class="footer__inner">
+            <p class="footer__text">&copy; 2026 DecodeLabs Engineering Foundations. All rights reserved.</p>
+            <div class="footer__contact-info">
+                <span>Email: decodelabs.tech@gmail.com</span>
+                <span>Location: Greater Lucknow, India</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
